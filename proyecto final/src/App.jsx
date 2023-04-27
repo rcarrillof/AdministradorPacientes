@@ -19,7 +19,7 @@ function App() {
         <Header titulo="Listado de pacientes" />
         <Paciente/>
         {pacientes.map((paciente)=>{
-          return <Paciente nombre={paciente.mascota} dueño={paciente.dueño}/>
+          return <Paciente nombre={paciente.mascota} dueño={paciente.dueño} />
         }) }
       </div>
     </div>
