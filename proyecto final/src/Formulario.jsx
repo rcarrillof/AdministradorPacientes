@@ -26,9 +26,9 @@ export default function Formulario() {
                 <input id="mascota" onChange={(e) => { setMascota(e.target.value) }} value={mascota} type="text" />
                 <label htmlFor="">Nombre dueño</label>
                 <input onChange={(e) => { setDueño(e.target.value) }} value={dueño} type="text" />
-                <button onChange={agregarPacientes}>Fecha</button>
+                {/* <button onChange={agregarPacientes}>Fecha</button> */}
                 <input onChange={(e) => { setFecha(e.target.value) }} value={fecha} type="date" />
-                <button onChange={agregarPacientes}>Hora</button>
+              {/*   <button onChange={agregarPacientes}>Hora</button> */}
                 <input onChange={(e) => { setHora(e.target.value) }} value={hora} type="time" />
                 <textarea className="label" onChange={(e) => { setSintomas(e.target.value) }} value={sintomas} cols="30" rows="10"></textarea>
                 <button onChange={agregarPacientes}>Agregar</button>
