@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Formulario from './Formulario'
 import Header from './Header'
@@ -11,16 +9,19 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <Header titulo="Crear un paciente" />
-        <Formulario pacientes={pacientes} setPacientes={setPacientes} />
+      <div className="t_principal">
+        <Header titulo={"Crear paciente"} />
       </div>
-      <div>
-        <Header titulo="Listado de pacientes" />
-        <Paciente/>
-        {pacientes.map((paciente)=>{
+      <div className="t_lista">
+        <Header titulo={"Listado de pacientes"} />
+      </div>
+      <div className='formulario'>
+        <Formulario pacientes={pacientes} setPacientes={setPacientes} />
+
+        <Paciente />
+        {pacientes.map((paciente) => {
           return <Paciente nombre={paciente.mascota} dueño={paciente.dueño} />
-        }) }
+        })}
       </div>
     </div>
   )

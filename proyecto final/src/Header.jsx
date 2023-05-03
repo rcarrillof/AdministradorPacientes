@@ -1,7 +1,8 @@
 import React from 'react'
+import './Header.css'
 
-export default function Header({titulo}) {
+export default function Header({ titulo }) {
   return (
-    <div>{titulo}</div>
+    <div className='container'>{titulo}</div>
   )
 }

@@ -1,3 +1,6 @@
 .pacienteContainer{
     background-color: orange ;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
 }
