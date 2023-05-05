@@ -1,6 +1,14 @@
-.pacienteContainer{
-    background-color: orange ;
+.pacienteContainer {
+    /* background-color: rgb(0, 255, 255); */
+    /* background-color: #24a7a7; */
+    background-color: #24c0c0;
+
     display: flex;
     flex-direction: column;
-    width: 33%;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    color: white;
+    padding: 25px 30px;
+    gap: 3.5%;
 }
